@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+select,
+input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  border: none;
+}
+ol,
+ul {
+  list-style: none;
+}
+/* css style */
+body {
+  background: black;
+}
+.polash {
+  border: 1px solid red;
+}
+/* main-box style */
+.main_box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1060px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1120px) {
+  .main_box {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main_box {
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+  }
+}
+/* btn style */
+.btn_totamo {
+  width: 224px;
+  height: 54px;
+  background: rgb(230, 83, 60);
+  border-radius: 2.625rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .btn_totamo {
+    width: 169px;
+    height: 54px;
+    font-size: 1rem;
+  }
+}
+.btn_black {
+  width: 224px;
+  height: 54px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background: rgb(0, 0, 0);
+  border-radius: 2.625rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .btn_black {
+    width: 169px;
+    height: 54px;
+    font-size: 1rem;
+  }
+}
+/* header style */
+
+/* nav style */
+nav {
+  padding-top: 3.5625rem;
+}
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  nav {
+    padding-top: 3.25rem;
+  }
+}
+.nav_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_tittle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 2.7rem;
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+}
+.nav_items {
+  display: block;
+}
+@media screen and (max-width: 576px) {
+  .nav_items {
+    display: none;
+  }
+}
+.nav_items ul {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.4375rem;
+  align-items: center;
+  padding: 0.25rem;
+  gap: 1.25rem;
+}
+.nav_items ul li a {
+  display: block;
+  text-decoration: none;
+  color: red;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nav_items_active {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.nav_items_last {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.mobile_icon {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .mobile_icon {
+    display: flex;
+  }
+}
