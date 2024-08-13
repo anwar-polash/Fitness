@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/miama");
+/* fonts */
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-miama: "Miama", sans-serif;
+}
+
 *,
 *::after,
 *::before {
@@ -23,9 +29,12 @@ ol,
 ul {
   list-style: none;
 }
+
 /* css style */
 body {
   background: black;
+  font-family: var(--font-inter);
+  color: #ffffff;
 }
 .polash {
   border: 1px solid red;
@@ -67,13 +76,6 @@ body {
   text-decoration: none;
 }
 @media screen and (max-width: 576px) {
-  .btn_totamo {
-    max-width: 169px;
-    height: 54px;
-    padding-top: 0.7rem;
-    padding-bottom: 0.5rem;
-    font-size: 0.79rem;
-  }
   .hero_btn_span {
     display: none;
   }
@@ -95,14 +97,8 @@ body {
 }
 @media screen and (max-width: 576px) {
   .btn_black {
-    max-width: 169px;
-    height: 54px;
-    padding-top: 0.7rem;
-    padding-bottom: 0.5rem;
-    font-size: 0.79rem;
-  }
-  .hero_btn_span {
-    display: none;
+    padding-left: 21px;
+    padding-right: 21px;
   }
 }
 
@@ -128,7 +124,6 @@ nav {
   font-style: italic;
   line-height: 2.7rem;
   color: rgb(230, 83, 60);
-  font-family: Inter;
 }
 .nav_items {
   display: block;
@@ -152,7 +147,6 @@ nav {
   text-decoration: none;
   color: red;
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 1.125rem;
   font-weight: 400;
   letter-spacing: 0%;
@@ -191,15 +185,15 @@ nav {
 @media screen and (min-width: 576px) and (max-width: 1120px) {
   .hero_container {
     margin-top: 4.6875rem;
-    margin-left: 1.875rem;
-    margin-right: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 @media screen and (max-width: 576px) {
   .hero_container {
-    margin-top: 3.1875rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin-top: 3.19rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 .hero_row {
@@ -217,13 +211,12 @@ nav {
 @media screen and (max-width: 576px) {
   .hero_row {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
   }
 }
 .hero_content {
   max-width: 599px;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 .hero_tittle {
   color: rgb(255, 255, 255);
@@ -231,12 +224,19 @@ nav {
   font-size: 78px;
   font-weight: 900;
   padding-bottom: 1.75rem;
+  text-align: left;
 }
 @media screen and (max-width: 576px) {
   .hero_tittle {
     max-width: 285px;
     font-size: 2.25rem;
   }
+}
+.hero_shape {
+  font-family: var(--font-miama);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2.7rem;
 }
 .hero_discription {
   max-width: 520px;
@@ -524,7 +524,7 @@ nav {
 .habit_tittle {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 120%;
   letter-spacing: 0%;
@@ -532,13 +532,14 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .habit_tittle {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 .habit_description {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
-  font-size: 14px;
+  font-size: 0.875rem;
+  padding-top: 0.875rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.3px;
@@ -709,4 +710,283 @@ nav {
   line-height: 18px;
   letter-spacing: 0.3px;
   text-align: center;
+}
+
+/* ******************************** */
+/* run section style */
+.run {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.94rem;
+  border-radius: 1.125rem;
+
+  background: rgb(34, 34, 34);
+  background-size: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.94rem;
+  padding-bottom: 1.94rem;
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  .run {
+    margin-top: 84px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .run {
+    margin-top: 84px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .run {
+    margin-top: 66px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.run_content {
+  display: flex;
+  max-width: 27.6875rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 576px) {
+  .run_content {
+    max-width: 17.9375rem;
+  }
+}
+.run_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 57.6px */
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .run_tittle {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .run_tittle {
+    font-size: 2rem;
+  }
+}
+.run_description {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.3px;
+  padding-top: 0.875rem;
+}
+.run_btn_box {
+  max-width: 287px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2.125rem;
+}
+@media screen and (max-width: 576px) {
+  .run_btn_box {
+    justify-content: center;
+    align-self: center;
+  }
+}
+.run_btn {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 42px;
+  background: #e6533c;
+
+  padding: 16px 67px;
+}
+@media screen and (max-width: 576px) {
+  .run_btn {
+    padding: 16px 95px;
+  }
+}
+.run_img {
+  max-width: 22.875rem;
+  height: 19.5rem;
+  overflow: clip;
+  border-radius: 1.125rem;
+}
+.run_img img {
+  width: 65rem;
+  height: auto;
+  object-position: -480px -102px;
+}
+@media screen and (max-width: 576px) {
+  .run_img {
+    max-width: 17.9375rem;
+    height: 10.625rem;
+  }
+  .run_img img {
+    max-width: 100%;
+    height: auto;
+    object-position: 0px 0px;
+  }
+}
+/* *********************************** */
+/* Exercise style */
+.exercise {
+  margin-top: 6.25rem;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .exercise {
+    margin-top: 4.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .exercise {
+    margin-top: 4.125rem;
+  }
+}
+.exercise_tittle {
+  max-width: 671px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 576px) {
+  .exercise_tittle {
+    font-size: 2rem;
+  }
+}
+.exercise_description {
+  max-width: 671px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+.exercises_row {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, auto));
+  margin-top: 58px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .exercises_row {
+    grid-template-columns: repeat(2, minmax(0, auto));
+    margin-top: 58px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .exercises_row {
+    margin-top: 37px;
+    grid-template-columns: repeat(1, minmax(0, auto));
+  }
+}
+/* body trainer */
+.body_trainer {
+  position: relative;
+  height: 400px;
+  position: relative;
+}
+.body_trainer_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.body_trainer:hover .body_trainer_content {
+  transform: scale(1);
+}
+.body_trainer {
+  height: 400px;
+}
+.body_trainer_tittle {
+  font-size: 2rem;
+  padding-top: 80px;
+  color: #ffff;
+}
+.body_trainer_sub_tittle {
+  font-size: 1.25rem;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.body_trainer_des {
+  padding-top: 20px;
+  font-size: 16px;
+}
+.body_trainer img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+/* swimming style */
+.swimming_trainer {
+  position: relative;
+  height: 400px;
+  position: relative;
+}
+.swimming_trainer_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform: scale(0);
+}
+.swimming_trainer:hover .swimming_trainer_content {
+  transform: scale(1);
+}
+.swimming_trainer {
+  height: 400px;
+}
+.body_trainer_tittle {
+  font-size: 2rem;
+  padding-top: 80px;
+  color: #ffff;
+}
+.swimming_trainer_tittle {
+  font-size: 1.25rem;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.swimming_trainer_sub_tittle {
+  padding-top: 20px;
+  font-size: 16px;
+}
+.swimming_trainer img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
 }
