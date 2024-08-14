@@ -990,3 +990,107 @@ nav {
   object-fit: cover;
   vertical-align: middle;
 }
+
+/* ****************************** */
+/* bmi calculator style */
+.bmi_calculator {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .bmi_calculator {
+    margin-bottom: 2.875rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bmi_calculator {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.bmi_calculator_content {
+  max-width: 671px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .bmi_calculator_content {
+    margin-left: 0;
+  }
+}
+.bmi_calculator_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: left;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .bmi_calculator_tittle {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bmi_calculator_tittle {
+    font-size: 2rem;
+  }
+}
+.bmi_calculator_des {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  padding-top: 14px;
+}
+/* *********************************** */
+/* bmi calculator chart */
+.bmi_calculator_chart_bg {
+  background: rgb(34, 34, 34);
+}
+.bmi_calculator_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.25rem;
+  padding-top: 3.125rem;
+}
+@media screen and (min-width: 0px) and (max-width: 992px) {
+  .bmi_calculator_row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.125rem;
+    row-gap: 3.875rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bmi_calculator_row {
+    row-gap: 2.625rem;
+  }
+}
+/* bmi calculator table */
+.bmi_cal_table {
+  max-width: 310px;
+}
+.bmi_cal_table_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.75em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+@media screen and (max-width: 576px) {
+  .bmi_cal_table_tittle {
+    font-size: 1rem;
+  }
+}
+
+/* bmi calculator form */
+.bmi_cal_form {
+  max-width: 577px;
+}
