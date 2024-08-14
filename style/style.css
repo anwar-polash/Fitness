@@ -1057,18 +1057,22 @@ nav {
   justify-content: space-between;
   column-gap: 1.25rem;
   padding-top: 3.125rem;
+  padding-bottom: 3.25rem;
 }
 @media screen and (min-width: 0px) and (max-width: 992px) {
   .bmi_calculator_row {
     display: flex;
     flex-direction: column;
     padding-top: 2.125rem;
+    padding-bottom: 2.37rem;
     row-gap: 3.875rem;
   }
 }
 @media screen and (max-width: 576px) {
   .bmi_calculator_row {
     row-gap: 2.625rem;
+    padding-top: 2.12rem;
+    padding-bottom: 2.69rem;
   }
 }
 /* bmi calculator table */
@@ -1197,4 +1201,109 @@ td {
   line-height: 1.375rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+/* team style */
+.our_team {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+}
+@media screen and (max-width: 991px) {
+  .our_team {
+    margin-top: 4.5rem;
+    margin-bottom: 4.75rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .our_team {
+    margin-top: 4.13rem;
+    margin-bottom: 4.13rem;
+  }
+}
+.team_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .team_tittle {
+    font-size: 2rem;
+  }
+}
+.team_desc {
+  max-width: 41.9375rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* trainer style */
+
+.team_row {
+  margin-top: 3.63rem;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, auto));
+  row-gap: 1.25rem;
+  column-gap: 1.25rem;
+  border-radius: 1.125rem;
+  background: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 991px) {
+  .team_row {
+    margin-top: 3.38rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .team_row {
+    margin-top: 2.31rem;
+    grid-template-columns: repeat(1, minmax(0, auto));
+  }
+  .trainer_1:nth-child(1),
+  .trainer_1:nth-child(4) {
+    display: none;
+  }
+  .trainer_1:nth-child(5) {
+    grid-area: 2;
+  }
+}
+
+.trainer_1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.125rem;
+}
+.trainer_1 {
+  position: relative;
+}
+.tainer_content {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 1.19rem;
+}
+.trainer_tittle {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+.trainer_position {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }
