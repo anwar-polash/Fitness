@@ -286,19 +286,19 @@
 
        </section>
        <!-- Bmi calculator section -->
-        <section class="bmi_calculator main_box polash">
-          <div class="bmi_calculator_content polash">
+        <section class="bmi_calculator main_box">
+          <div class="bmi_calculator_content">
             <h2 class="bmi_calculator_tittle">BMI Calculator</h2>
           <p class="bmi_calculator_des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
           </div>
         </section>
         <!-- bmi calculator chart -->
          <section class="bmi_calculator_chart_bg">
-          <div class="bmi_calculator_chart_area main_box polash">
+          <div class="bmi_calculator_chart_area main_box">
             <div class="bmi_calculator_row">
-              <div class="bmi_cal_table polash">
+              <div class="bmi_cal_table">
                 <h4 class="bmi_cal_table_tittle">BMI Calculator Chart</h4>
-                <table>
+                <table class="bmi_table">
                   <tr>
                     <th>BMI</th>
                     <th>Weight Status</th>
@@ -321,8 +321,28 @@
                   </tr>
                 </table>
               </div>
-              <div class="bmi_cal_form polash">
+              <div class="bmi_cal_form">
                 <h4 class="bmi_cal_form_tittle">Calculate your BMI</h4>
+                <p class="bmi_cal_from_des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                <form action="" class="bmi_form">
+                  <div class="form_group">
+                    <input class="form_input" type="text" name="text" placeholder="Height/cm">
+                    <input class="form_input" type="text" name="text" placeholder="Weight/kg">
+                  </div>
+                  <div class="form_group">
+                    <input class="form_input" type="text" name="text" placeholder="Age">
+                    <select class="form_select form_input" name="" id="">
+                      <option value="">sex</option>
+                    </select> 
+                  </div>
+                  <div class="form_sub  ">
+                    <select name="" id="" class="form_input ">
+                      <option value="">Select an activity factor</option>
+                    </select>
+                  </div>
+                </form>
+                <button class="from_btn">Calculate</button>
+
               </div>
             </div>
           </div>
