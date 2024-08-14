@@ -105,6 +105,13 @@ body {
 /* header style */
 
 /* nav style */
+.header {
+  background-image: linear-gradient(
+    180deg,
+    #111 0%,
+    rgba(119, 119, 119, 0) 100%
+  );
+}
 nav {
   padding-top: 3.5625rem;
 }
@@ -513,7 +520,9 @@ nav {
 }
 @media screen and (max-width: 576px) {
   .habit {
-    margin-top: 0px;
+    margin-top: -6rem;
+    position: relative;
+    background-color: black;
   }
 }
 .habit_content {
